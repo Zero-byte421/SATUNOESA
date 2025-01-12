@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SATUNOESA Coffee</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+</style>
+<body>
+    <nav class="navbar">
+        <a href="#home" class="logo">SATUNOESA</a>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#footer">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>SATUNOESA</h1>
+            <p>"KOPI ENAK HARUS DIBAGI"</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-grid">
+                <div class="about-content" data-aos="fade-right">
+                    <span class="about-subtitle">About Us</span>
+                    <h2 class="about-title">Kopi Enak Harus Dibagi</h2>
+                    <p class="about-description">
+                        SATUNOESA Coffee adalah tempat yang menggabungkan passion untuk kopi dengan semangat berbagi. 
+                        Kami percaya bahwa setiap cangkir kopi memiliki cerita unik, dan kami ingin berbagi cerita-cerita 
+                        tersebut dengan Anda. Dibangun dengan dedikasi untuk kualitas dan pelayanan, kami menghadirkan 
+                        pengalaman kopi yang tidak hanya memuaskan lidah, tetapi juga menyentuh hati.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3 class="feature-title">Premium Coffee</h3>
+                                <p class="feature-description">Biji kopi pilihan berkualitas tinggi dari petani lokal terbaik</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3 class="feature-title">Made with Love</h3>
+                                <p class="feature-description">Setiap cangkir disajikan dengan penuh perhatian dan dedikasi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Coffee & Non- Coffee Variants</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Happy Customers</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image" data-aos="fade-left">
+                    <img src="images/kopi2.jpg" alt="SATUNOESA Coffee Experience">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="menu-container">
+            <div class="menu-title" data-aos="fade-up">
+                <h2>Our Menu</h2>
+                <p>Discover our carefully curated selection of beverages</p>
+            </div>
+            
+            <div class="menu-tabs" data-aos="fade-up">
+                <button class="menu-tab active" data-category="all">All</button>
+                <button class="menu-tab" data-category="coffee">Coffee</button>
+                <button class="menu-tab" data-category="non-coffee">Non-Coffee</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Coffee Menu Items -->
+                <div class="menu-item" data-category="coffee" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/Kopi_filter.jpg" alt="Kopi Filter">
+                        <span class="menu-item-badge">Bestseller</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Kopi Filter Panas/Es</h4>
+                        <p>Diseduh menggunakan dripper v60 dan kelas filter</p>
+                        <span class="price">12k/15K</span>
+                    </div>
+                </div>
+            
+                <div class="menu-item" data-category="coffee" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/kopi_godog_panas.jpg" alt="Kopi Godog Arabica">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Kopi Godog/Godog Susu Arabica</h4>
+                        <p>Kopi asli dengan teknik seduh coldbrew yang di panaskan / ditambah susu</p>
+                        <span class="price">8K/10K</span>
+                    </div>
+                </div>
+            
+                <div class="menu-item" data-category="coffee" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/kopi_susu_godog_es.jpg" alt="Kopi Godog Es Arabica">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Kopi Godog Es/Godog Susus Es Arabica</h4>
+                        <p>Kopi asli dengan teknik seduh coldbrew yang di tambahkan es / ditambah susu</p>
+                        <span class="price">10K/15K</span>
+                    </div>
+                </div>
+            
+                <div class="menu-item" data-category="coffee" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/kopi_susu_robusta.jpg" alt="Kopi Godog Robusta">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Kopi Godog/Godog Susu Robusta</h4>
+                        <p>Kopi hitam yang di panaskan / ditambah susu</p>
+                        <span class="price">5K/6K</span>
+                    </div>
+                </div>
+            
+                <div class="menu-item" data-category="coffee" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/Kopi_Godog_Es.jpg" alt="Kopi Godog Es Robusta">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Kopi Godog Es/Godong Susu Es Robusta</h4>
+                        <p>Kopi asli yang di tambahkan es / ditambah susu</p>
+                        <span class="price">6K/8K</span>
+                    </div>
+                </div>
+            
+                <div class="menu-item" data-category="coffee" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/kopi_robusta_gula_aren.jpg" alt="Kopi Robusta Gula Aren">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Kopi Robusta Gula Aren</h4>
+                        <p>Kopi asli yang di tambahkan Gula aren</p>
+                        <span class="price">8K</span>
+                    </div>
+                </div>
+            
+                <div class="menu-item" data-category="coffee" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/kopi_arabica_gula_aren.jpg" alt="Kopi Arabica Gula Aren">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Kopi Arabica Gula Aren</h4>
+                        <p>Kopi asli yang di tambahkan Gula aren</p>
+                        <span class="price">10K</span>
+                    </div>
+                </div>
+            
+                <div class="menu-item" data-category="coffee" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/vietnam_drip.jpg" alt="Vietnam Drip">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Vietnam Drip</h4>
+                        <span class="price">15K</span>
+                    </div>
+                </div>
+            
+                <!-- Non-Coffee Menu Items -->
+                <div class="menu-item" data-category="non-coffee" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/red_velvet.jpg" alt="Red Velvet">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Red Velvet</h4>
+                        <span class="price">12K/15K</span>
+                    </div>
+                </div>
+            
+                <div class="menu-item" data-category="non-coffee" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/taro.jpg" alt="Taro">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Taro</h4>
+                        <span class="price">12K/15K</span>
+                    </div>
+                </div>
+            
+                <div class="menu-item" data-category="non-coffee" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/grean_tea.jpg" alt="Green Tea">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Green Tea</h4>
+                        <span class="price">12K/15K</span>
+                    </div>
+                </div>
+            
+                <div class="menu-item" data-category="non-coffee" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/thai_tea.jpg" alt="Thai Tea">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Thai Tea</h4>
+                        <span class="price">12K/15K</span>
+                    </div>
+                </div>
+            
+                <div class="menu-item" data-category="non-coffee" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/ovaltine.jpg" alt="Ovaltine">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Ovaltine</h4>
+                        <span class="price">10K/12K</span>
+                    </div>
+                </div>
+            
+                <div class="menu-item" data-category="non-coffee" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/teh_vanilla.jpg" alt="Teh Vanilla">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Teh Vanilla</h4>
+                        <span class="price">8K/10K</span>
+                    </div>
+                </div>
+            
+                <div class="menu-item" data-category="non-coffee" data-aos="fade-up">
+                    <div class="menu-item-image">
+                        <img src="images/special_tea.jpg" alt="Specialtea">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Specialtea</h4>
+                        <span class="price">10K/12K</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="footer-content-wrapper">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <h3>SATUNOESA COFFEE</h3>
+                    <p class="footer-tagline">"KOPI ENAK HARUS DIBAGI"</p>
+                </div>
+                
+                <div class="footer-info">
+                    <div class="footer-section">
+                        <h4>Location</h4>
+                        <p>Jl. Raya Cibolang No. 21<br>Cisaat Sukabumi 43152<br>INDONESIA</p>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Contact Us</h4>
+                        <a href="tel:+6281563719585" class="footer-contact">
+                            <i class="fas fa-phone"></i>
+                            +62 815-6371-9585
+                        </a>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/satunoesa?igsh=Njh4cWJqOGZrZm4w" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" aria-label="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="#" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SATUNOESA Coffee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      // Initialize AOS library
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize AOS with optimal settings
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+        delay: 200,
+        disable: window.innerWidth < 768 // Disable on mobile for better performance
+    });
+
+    // DOM Elements
+    const navbar = document.querySelector('.navbar');
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    const hero = document.querySelector('.hero');
+    const heroContent = document.querySelector('.hero-content');
+    const menuItems = document.querySelectorAll('.menu-item');
+    const menuTabs = document.querySelectorAll('.menu-tab');
+
+    // Create and append overlay
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+    document.body.appendChild(overlay);
+
+    // State management
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+    let isNavOpen = false;
+
+    // Mobile menu functionality
+    function toggleMobileMenu() {
+        isNavOpen = !isNavOpen;
+        mobileMenuBtn.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.classList.toggle('no-scroll');
+    }
+
+    // Event listeners for mobile menu
+    mobileMenuBtn?.addEventListener('click', toggleMobileMenu);
+    overlay.addEventListener('click', toggleMobileMenu);
+    navLinks?.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (isNavOpen) toggleMobileMenu();
+        });
+    });
+
+    // Responsive scroll effects
+    function handleScroll() {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                const scrollY = window.scrollY;
+
+                // Navbar scroll effect
+                if (navbar) {
+                    navbar.classList.toggle('scrolled', scrollY > 50);
+                }
+
+                // Hero parallax effect (only on desktop)
+                if (window.innerWidth > 768) {
+                    if (hero && heroContent) {
+                        const parallaxSpeed = 0.4;
+                        hero.style.backgroundPositionY = `${scrollY * parallaxSpeed}px`;
+                        heroContent.style.transform = `translateY(${scrollY * 0.3}px)`;
+                        heroContent.style.opacity = Math.max(0, 1 - (scrollY / 700));
+                    }
+                }
+
+                // Menu items parallax
+                menuItems.forEach(item => {
+                    const rect = item.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                        const distance = window.innerHeight - rect.top;
+                        const percentage = Math.min(distance / window.innerHeight, 1);
+                        item.style.transform = `translateY(${20 - (percentage * 20)}px)`;
+                    }
+                });
+
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }
+
+    // Menu filtering with animations
+    menuTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            menuTabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            
+            const category = tab.dataset.category;
+            
+            menuItems.forEach(item => {
+                const shouldShow = category === 'all' || item.dataset.category === category;
+                item.style.transition = 'opacity 0.3s, transform 0.3s';
+                item.style.opacity = '0';
+                item.style.transform = 'scale(0.8)';
+                
+                setTimeout(() => {
+                    item.style.display = shouldShow ? 'block' : 'none';
+                    if (shouldShow) {
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 50);
+                    }
+                }, 300);
+            });
+        });
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = document.querySelector(anchor.getAttribute('href'));
+            if (target) {
+                const headerOffset = 80;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Intersection Observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                if (entry.target.hasAttribute('data-aos')) {
+                    entry.target.classList.add('aos-animate');
+                }
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    });
+
+    // Observe elements
+    document.querySelectorAll('.menu-item, .about-content, .hero-content, .footer-content')
+        .forEach(elem => observer.observe(elem));
+
+    // Event listeners
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768 && isNavOpen) {
+            toggleMobileMenu();
+        }
+        AOS.refresh();
+    });
+
+    // Initialize page load animations
+    window.addEventListener('load', () => {
+        document.body.classList.add('loaded');
+        if (hero) hero.style.opacity = '1';
+        if (heroContent) heroContent.style.transform = 'translateY(0)';
+        AOS.refresh();
+    });
+
+    // Optimize touch events for mobile
+    document.addEventListener('touchstart', () => {}, { passive: true });
+});
+        
+    </script>
+</body>
+</html>
